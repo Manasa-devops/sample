@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the code from the repository
-                git url: 'https://github.com/yourusername/your-repository.git'
+                git url: https://github.com/Manasa-devops/sample.git
             }
         }
 
