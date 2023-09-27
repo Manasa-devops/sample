@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the code from the repository
-               checkout([$class: 'GitSCM', branches: [[name: master], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [url:'https://github.com/Manasa-devops/sample.git']]])
+               checkout([$class: 'GitSCM', branches: [[name: master], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [] url:'https://github.com/Manasa-devops/sample.git']])
             }
         }        stage('Build') {
             steps {
