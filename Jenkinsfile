@@ -4,7 +4,7 @@ pipeline {
         stage('Example') {
             steps {
                 // Checkout the code from the repository
-               echo 'Hello World'
+               git url: https://github.com/Manasa-devops/sample.git
             }
         }
     }                                                                                                                                                                 
